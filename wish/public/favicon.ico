@@ -1,0 +1,8 @@
+(err, data) => {
+				if (!err) {
+					res.writeHeader(200, {
+						"Content-type": mime.getType(realPath)
+					});
+					res.end(data);
+				}
+			}
